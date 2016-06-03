@@ -1,25 +1,118 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="br2-IQ-SdN">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="9tZ-tD-9k0">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <tabBarController id="br2-IQ-SdN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fxn-AW-MGx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="5n9-6N-TNZ" kind="relationship" relationship="viewControllers" id="htX-S0-kwp"/>
+                        <segue destination="VD6-S4-M5Z" kind="relationship" relationship="viewControllers" id="wzP-gF-ALB"/>
+                        <segue destination="rmC-A0-I5Q" kind="relationship" relationship="viewControllers" id="u5f-at-woa"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P7X-ia-mpa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2203" y="-1276"/>
+        </scene>
+        <!--Near Me-->
+        <scene sceneID="uOk-VN-Xb9">
+            <objects>
+                <viewController id="VD6-S4-M5Z" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="Qcs-KP-UzH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rvk-9i-J27"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="pzq-wx-kcf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Bh-b6-otY">
+                                <rect key="frame" x="131" y="290" width="338" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Placeholder for Viewing Challenges Near Me">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0Bh-b6-otY" firstAttribute="centerY" secondItem="pzq-wx-kcf" secondAttribute="centerY" id="cZz-FZ-aKd"/>
+                            <constraint firstItem="0Bh-b6-otY" firstAttribute="centerX" secondItem="pzq-wx-kcf" secondAttribute="centerX" id="onj-JP-KBS"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Near Me" image="1032-route" id="snE-m9-dqk"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EsU-0X-EuV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="2685" y="-327"/>
+        </scene>
+        <!--New Challenge-->
+        <scene sceneID="OKA-1b-2gM">
+            <objects>
+                <viewController id="5n9-6N-TNZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ILi-5w-SM4"/>
+                        <viewControllerLayoutGuide type="bottom" id="Afl-I0-3sm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="di6-GF-9h5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VBd-FZ-nbQ">
+                                <rect key="frame" x="141" y="290" width="318" height="20"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Placeholder for Creating a New Challenge">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VBd-FZ-nbQ" firstAttribute="centerY" secondItem="di6-GF-9h5" secondAttribute="centerY" id="09h-Qf-7nn"/>
+                            <constraint firstItem="VBd-FZ-nbQ" firstAttribute="centerX" secondItem="di6-GF-9h5" secondAttribute="centerX" id="1Hb-6y-u05"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="New Challenge" image="714-camera" id="P5Q-kT-fpP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UFs-VB-jHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1723" y="-327"/>
+        </scene>
+        <!--DataBrowser-->
+        <scene sceneID="DFU-Y8-2J7">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DataBrowser" id="rmC-A0-I5Q" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="vLN-Uz-cnO"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j32-E0-ibh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3016" y="-1276"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1032-route" width="28" height="26"/>
+        <image name="714-camera" width="28" height="21"/>
+    </resources>
 </document>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3D5EFE41D00BF5000A2669B"
-               BuildableName = "iSpyChallenge.app"
-               BlueprintName = "iSpyChallenge"
+               BlueprintIdentifier = "C3D5F0241D00E2EB00A2669B"
+               BuildableName = "iSpyDataImporter"
+               BlueprintName = "iSpyDataImporter"
                ReferencedContainer = "container:iSpyChallenge.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,33 +28,13 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3D5F0001D00BF5000A2669B"
-               BuildableName = "iSpyChallengeTests.xctest"
-               BlueprintName = "iSpyChallengeTests"
-               ReferencedContainer = "container:iSpyChallenge.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C3D5F00B1D00BF5000A2669B"
-               BuildableName = "iSpyChallengeUITests.xctest"
-               BlueprintName = "iSpyChallengeUITests"
-               ReferencedContainer = "container:iSpyChallenge.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3D5EFE41D00BF5000A2669B"
-            BuildableName = "iSpyChallenge.app"
-            BlueprintName = "iSpyChallenge"
+            BlueprintIdentifier = "C3D5F0241D00E2EB00A2669B"
+            BuildableName = "iSpyDataImporter"
+            BlueprintName = "iSpyDataImporter"
             ReferencedContainer = "container:iSpyChallenge.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -75,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3D5EFE41D00BF5000A2669B"
-            BuildableName = "iSpyChallenge.app"
-            BlueprintName = "iSpyChallenge"
+            BlueprintIdentifier = "C3D5F0241D00E2EB00A2669B"
+            BuildableName = "iSpyDataImporter"
+            BlueprintName = "iSpyDataImporter"
             ReferencedContainer = "container:iSpyChallenge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "C3D5EFE41D00BF5000A2669B"
-            BuildableName = "iSpyChallenge.app"
-            BlueprintName = "iSpyChallenge"
+            BlueprintIdentifier = "C3D5F0241D00E2EB00A2669B"
+            BuildableName = "iSpyDataImporter"
+            BlueprintName = "iSpyDataImporter"
             ReferencedContainer = "container:iSpyChallenge.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

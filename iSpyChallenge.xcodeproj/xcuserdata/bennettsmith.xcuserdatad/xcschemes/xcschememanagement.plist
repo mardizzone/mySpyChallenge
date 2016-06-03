@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>iSpyDataImporter.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>C3D5F00B1D00BF5000A2669B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C3D5F0241D00E2EB00A2669B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

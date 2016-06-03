@@ -9,13 +9,28 @@
 /* Begin PBXBuildFile section */
 		C3D5EFEA1D00BF5000A2669B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5EFE91D00BF5000A2669B /* main.m */; };
 		C3D5EFED1D00BF5000A2669B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5EFEC1D00BF5000A2669B /* AppDelegate.m */; };
-		C3D5EFF01D00BF5000A2669B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5EFEF1D00BF5000A2669B /* ViewController.m */; };
 		C3D5EFF31D00BF5000A2669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D5EFF11D00BF5000A2669B /* Main.storyboard */; };
 		C3D5EFF61D00BF5000A2669B /* iSpyChallenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C3D5EFF41D00BF5000A2669B /* iSpyChallenge.xcdatamodeld */; };
 		C3D5EFF81D00BF5000A2669B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3D5EFF71D00BF5000A2669B /* Assets.xcassets */; };
 		C3D5EFFB1D00BF5000A2669B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D5EFF91D00BF5000A2669B /* LaunchScreen.storyboard */; };
 		C3D5F0061D00BF5000A2669B /* iSpyChallengeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0051D00BF5000A2669B /* iSpyChallengeTests.m */; };
 		C3D5F0111D00BF5000A2669B /* iSpyChallengeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0101D00BF5000A2669B /* iSpyChallengeUITests.m */; };
+		C3D5F0201D00D8C800A2669B /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F01F1D00D8C800A2669B /* DataController.m */; };
+		C3D5F0321D01303E00A2669B /* PhotoController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0311D01303E00A2669B /* PhotoController.m */; };
+		C3D5F0361D01366C00A2669B /* iSpySampleData in Resources */ = {isa = PBXBuildFile; fileRef = C3D5F0351D0135C900A2669B /* iSpySampleData */; };
+		C3D5F0471D013E7900A2669B /* Challenge+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0381D013E7900A2669B /* Challenge+CoreDataProperties.m */; };
+		C3D5F0481D013E7900A2669B /* Challenge.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F03A1D013E7900A2669B /* Challenge.m */; };
+		C3D5F0491D013E7900A2669B /* User+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F03C1D013E7900A2669B /* User+CoreDataProperties.m */; };
+		C3D5F04A1D013E7900A2669B /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F03E1D013E7900A2669B /* User.m */; };
+		C3D5F04B1D013E7900A2669B /* Match+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0401D013E7900A2669B /* Match+CoreDataProperties.m */; };
+		C3D5F04C1D013E7900A2669B /* Match.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0421D013E7900A2669B /* Match.m */; };
+		C3D5F04D1D013E7900A2669B /* Rating+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0441D013E7900A2669B /* Rating+CoreDataProperties.m */; };
+		C3D5F04E1D013E7900A2669B /* Rating.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0461D013E7900A2669B /* Rating.m */; };
+		C3D5F0521D0144DB00A2669B /* UsersTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0511D0144DB00A2669B /* UsersTableViewController.m */; };
+		C3D5F0561D0151DD00A2669B /* DataBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D5F0541D0151DD00A2669B /* DataBrowser.storyboard */; };
+		C3D5F0591D01577C00A2669B /* ChallengesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0581D01577C00A2669B /* ChallengesTableViewController.m */; };
+		C3D5F05C1D015E7200A2669B /* NSArray+RandomElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F05B1D015E7200A2669B /* NSArray+RandomElement.m */; };
+		C3D5F0611D016E9800A2669B /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0601D016E9800A2669B /* ReadMe.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +55,6 @@
 		C3D5EFE91D00BF5000A2669B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3D5EFEB1D00BF5000A2669B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C3D5EFEC1D00BF5000A2669B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C3D5EFEE1D00BF5000A2669B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C3D5EFEF1D00BF5000A2669B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C3D5EFF21D00BF5000A2669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C3D5EFF51D00BF5000A2669B /* iSpyChallenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iSpyChallenge.xcdatamodel; sourceTree = "<group>"; };
 		C3D5EFF71D00BF5000A2669B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +66,35 @@
 		C3D5F00C1D00BF5000A2669B /* iSpyChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iSpyChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D5F0101D00BF5000A2669B /* iSpyChallengeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iSpyChallengeUITests.m; sourceTree = "<group>"; };
 		C3D5F0121D00BF5000A2669B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3D5F01E1D00D8C800A2669B /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		C3D5F01F1D00D8C800A2669B /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+		C3D5F0301D01303E00A2669B /* PhotoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoController.h; sourceTree = "<group>"; };
+		C3D5F0311D01303E00A2669B /* PhotoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoController.m; sourceTree = "<group>"; };
+		C3D5F0351D0135C900A2669B /* iSpySampleData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iSpySampleData; sourceTree = "<group>"; };
+		C3D5F0371D013E7900A2669B /* Challenge+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Challenge+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C3D5F0381D013E7900A2669B /* Challenge+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Challenge+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C3D5F0391D013E7900A2669B /* Challenge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Challenge.h; sourceTree = "<group>"; };
+		C3D5F03A1D013E7900A2669B /* Challenge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Challenge.m; sourceTree = "<group>"; };
+		C3D5F03B1D013E7900A2669B /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C3D5F03C1D013E7900A2669B /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C3D5F03D1D013E7900A2669B /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C3D5F03E1D013E7900A2669B /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C3D5F03F1D013E7900A2669B /* Match+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Match+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C3D5F0401D013E7900A2669B /* Match+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Match+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C3D5F0411D013E7900A2669B /* Match.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Match.h; sourceTree = "<group>"; };
+		C3D5F0421D013E7900A2669B /* Match.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Match.m; sourceTree = "<group>"; };
+		C3D5F0431D013E7900A2669B /* Rating+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Rating+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C3D5F0441D013E7900A2669B /* Rating+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Rating+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C3D5F0451D013E7900A2669B /* Rating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rating.h; sourceTree = "<group>"; };
+		C3D5F0461D013E7900A2669B /* Rating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rating.m; sourceTree = "<group>"; };
+		C3D5F0501D0144DB00A2669B /* UsersTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UsersTableViewController.h; sourceTree = "<group>"; };
+		C3D5F0511D0144DB00A2669B /* UsersTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersTableViewController.m; sourceTree = "<group>"; };
+		C3D5F0551D0151DD00A2669B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DataBrowser.storyboard; sourceTree = "<group>"; };
+		C3D5F0571D01577C00A2669B /* ChallengesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengesTableViewController.h; sourceTree = "<group>"; };
+		C3D5F0581D01577C00A2669B /* ChallengesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengesTableViewController.m; sourceTree = "<group>"; };
+		C3D5F05A1D015E7200A2669B /* NSArray+RandomElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RandomElement.h"; sourceTree = "<group>"; };
+		C3D5F05B1D015E7200A2669B /* NSArray+RandomElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomElement.m"; sourceTree = "<group>"; };
+		C3D5F0601D016E9800A2669B /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +125,8 @@
 		C3D5EFDC1D00BF5000A2669B = {
 			isa = PBXGroup;
 			children = (
+				C3D5F0601D016E9800A2669B /* ReadMe.md */,
+				C3D5F0351D0135C900A2669B /* iSpySampleData */,
 				C3D5EFE71D00BF5000A2669B /* iSpyChallenge */,
 				C3D5F0041D00BF5000A2669B /* iSpyChallengeTests */,
 				C3D5F00F1D00BF5000A2669B /* iSpyChallengeUITests */,
@@ -105,13 +149,13 @@
 			children = (
 				C3D5EFEB1D00BF5000A2669B /* AppDelegate.h */,
 				C3D5EFEC1D00BF5000A2669B /* AppDelegate.m */,
-				C3D5EFEE1D00BF5000A2669B /* ViewController.h */,
-				C3D5EFEF1D00BF5000A2669B /* ViewController.m */,
 				C3D5EFF11D00BF5000A2669B /* Main.storyboard */,
+				C3D5F0541D0151DD00A2669B /* DataBrowser.storyboard */,
 				C3D5EFF71D00BF5000A2669B /* Assets.xcassets */,
 				C3D5EFF91D00BF5000A2669B /* LaunchScreen.storyboard */,
 				C3D5EFFC1D00BF5000A2669B /* Info.plist */,
-				C3D5EFF41D00BF5000A2669B /* iSpyChallenge.xcdatamodeld */,
+				C3D5F0531D01456B00A2669B /* Data Browser */,
+				C3D5F04F1D013E8500A2669B /* Model */,
 				C3D5EFE81D00BF5000A2669B /* Supporting Files */,
 			);
 			path = iSpyChallenge;
@@ -141,6 +185,47 @@
 				C3D5F0121D00BF5000A2669B /* Info.plist */,
 			);
 			path = iSpyChallengeUITests;
+			sourceTree = "<group>";
+		};
+		C3D5F04F1D013E8500A2669B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3D5EFF41D00BF5000A2669B /* iSpyChallenge.xcdatamodeld */,
+				C3D5F01E1D00D8C800A2669B /* DataController.h */,
+				C3D5F01F1D00D8C800A2669B /* DataController.m */,
+				C3D5F0301D01303E00A2669B /* PhotoController.h */,
+				C3D5F0311D01303E00A2669B /* PhotoController.m */,
+				C3D5F0371D013E7900A2669B /* Challenge+CoreDataProperties.h */,
+				C3D5F0381D013E7900A2669B /* Challenge+CoreDataProperties.m */,
+				C3D5F0391D013E7900A2669B /* Challenge.h */,
+				C3D5F03A1D013E7900A2669B /* Challenge.m */,
+				C3D5F03B1D013E7900A2669B /* User+CoreDataProperties.h */,
+				C3D5F03C1D013E7900A2669B /* User+CoreDataProperties.m */,
+				C3D5F03D1D013E7900A2669B /* User.h */,
+				C3D5F03E1D013E7900A2669B /* User.m */,
+				C3D5F03F1D013E7900A2669B /* Match+CoreDataProperties.h */,
+				C3D5F0401D013E7900A2669B /* Match+CoreDataProperties.m */,
+				C3D5F0411D013E7900A2669B /* Match.h */,
+				C3D5F0421D013E7900A2669B /* Match.m */,
+				C3D5F0431D013E7900A2669B /* Rating+CoreDataProperties.h */,
+				C3D5F0441D013E7900A2669B /* Rating+CoreDataProperties.m */,
+				C3D5F0451D013E7900A2669B /* Rating.h */,
+				C3D5F0461D013E7900A2669B /* Rating.m */,
+				C3D5F05A1D015E7200A2669B /* NSArray+RandomElement.h */,
+				C3D5F05B1D015E7200A2669B /* NSArray+RandomElement.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C3D5F0531D01456B00A2669B /* Data Browser */ = {
+			isa = PBXGroup;
+			children = (
+				C3D5F0501D0144DB00A2669B /* UsersTableViewController.h */,
+				C3D5F0511D0144DB00A2669B /* UsersTableViewController.m */,
+				C3D5F0571D01577C00A2669B /* ChallengesTableViewController.h */,
+				C3D5F0581D01577C00A2669B /* ChallengesTableViewController.m */,
+			);
+			name = "Data Browser";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +295,7 @@
 				TargetAttributes = {
 					C3D5EFE41D00BF5000A2669B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = T75VGA695T;
 					};
 					C3D5F0001D00BF5000A2669B = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -246,9 +332,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D5F0361D01366C00A2669B /* iSpySampleData in Resources */,
 				C3D5EFFB1D00BF5000A2669B /* LaunchScreen.storyboard in Resources */,
 				C3D5EFF81D00BF5000A2669B /* Assets.xcassets in Resources */,
 				C3D5EFF31D00BF5000A2669B /* Main.storyboard in Resources */,
+				C3D5F0561D0151DD00A2669B /* DataBrowser.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +361,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3D5EFF01D00BF5000A2669B /* ViewController.m in Sources */,
 				C3D5EFED1D00BF5000A2669B /* AppDelegate.m in Sources */,
+				C3D5F0591D01577C00A2669B /* ChallengesTableViewController.m in Sources */,
+				C3D5F04C1D013E7900A2669B /* Match.m in Sources */,
+				C3D5F0521D0144DB00A2669B /* UsersTableViewController.m in Sources */,
+				C3D5F0201D00D8C800A2669B /* DataController.m in Sources */,
+				C3D5F04E1D013E7900A2669B /* Rating.m in Sources */,
+				C3D5F04A1D013E7900A2669B /* User.m in Sources */,
+				C3D5F04B1D013E7900A2669B /* Match+CoreDataProperties.m in Sources */,
+				C3D5F05C1D015E7200A2669B /* NSArray+RandomElement.m in Sources */,
 				C3D5EFF61D00BF5000A2669B /* iSpyChallenge.xcdatamodeld in Sources */,
+				C3D5F04D1D013E7900A2669B /* Rating+CoreDataProperties.m in Sources */,
+				C3D5F0611D016E9800A2669B /* ReadMe.md in Sources */,
 				C3D5EFEA1D00BF5000A2669B /* main.m in Sources */,
+				C3D5F0321D01303E00A2669B /* PhotoController.m in Sources */,
+				C3D5F0471D013E7900A2669B /* Challenge+CoreDataProperties.m in Sources */,
+				C3D5F0491D013E7900A2669B /* User+CoreDataProperties.m in Sources */,
+				C3D5F0481D013E7900A2669B /* Challenge.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,6 +427,14 @@
 				C3D5EFFA1D00BF5000A2669B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C3D5F0541D0151DD00A2669B /* DataBrowser.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D5F0551D0151DD00A2669B /* Base */,
+			);
+			name = DataBrowser.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -419,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueowl.iSpyChallenge;
@@ -430,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueowl.iSpyChallenge;
