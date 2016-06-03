@@ -182,7 +182,6 @@
             for (id element in challenges) {
                 if ([element isKindOfClass:[NSDictionary class]]) {
                     NSDictionary *challengeDictionary = (NSDictionary *)element;
-                    NSLog(@"%@", challengeDictionary);
                     NSString *hint = [challengeDictionary objectForKey:@"hint"];
                     double latitude = [[challengeDictionary objectForKey:@"latitude"] doubleValue];
                     double longitude = [[challengeDictionary objectForKey:@"longitude"] doubleValue];
