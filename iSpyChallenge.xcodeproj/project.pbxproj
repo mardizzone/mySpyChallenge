@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F878E3F1803C87F9365D395 /* libPods-iSpyChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C67E0CE36D31FEDBE7247A44 /* libPods-iSpyChallengeTests.a */; };
+		9262D52DD40712D2BE046285 /* libPods-iSpyChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5A457C94513EA9CD9B5346 /* libPods-iSpyChallengeUITests.a */; };
+		BCF9832220AF2D1B1A493539 /* libPods-iSpyChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBDAEA452E50E7940D57A56 /* libPods-iSpyChallenge.a */; };
 		C3D5EFEA1D00BF5000A2669B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5EFE91D00BF5000A2669B /* main.m */; };
 		C3D5EFED1D00BF5000A2669B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5EFEC1D00BF5000A2669B /* AppDelegate.m */; };
 		C3D5EFF31D00BF5000A2669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D5EFF11D00BF5000A2669B /* Main.storyboard */; };
@@ -51,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CA31F2C71BCB6B8582DB2C5 /* Pods-iSpyChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallengeTests/Pods-iSpyChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		1EBDAEA452E50E7940D57A56 /* libPods-iSpyChallenge.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iSpyChallenge.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4951EB247BA1A7D739B51D9B /* Pods-iSpyChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallengeUITests/Pods-iSpyChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		716B58AEB48A3204E96CA11A /* Pods-iSpyChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallenge/Pods-iSpyChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		8788DD4CF4396431C6384EB2 /* Pods-iSpyChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallenge/Pods-iSpyChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		C3D5EFE51D00BF5000A2669B /* iSpyChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSpyChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D5EFE91D00BF5000A2669B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3D5EFEB1D00BF5000A2669B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -95,6 +103,12 @@
 		C3D5F05A1D015E7200A2669B /* NSArray+RandomElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+RandomElement.h"; sourceTree = "<group>"; };
 		C3D5F05B1D015E7200A2669B /* NSArray+RandomElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomElement.m"; sourceTree = "<group>"; };
 		C3D5F0601D016E9800A2669B /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
+		C3E5A7881D01E3DD0083FF58 /* iSpy App - Coding Challenge.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "iSpy App - Coding Challenge.pdf"; sourceTree = "<group>"; };
+		C3E5A7891D01E3E40083FF58 /* iSpy App - Coding Challenge.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iSpy App - Coding Challenge.pages"; sourceTree = "<group>"; };
+		C67E0CE36D31FEDBE7247A44 /* libPods-iSpyChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iSpyChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5A457C94513EA9CD9B5346 /* libPods-iSpyChallengeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iSpyChallengeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84FF853D52317B75739AD02 /* Pods-iSpyChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallengeUITests/Pods-iSpyChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4EEE7B3218D0AD4DB89DD5C /* Pods-iSpyChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallengeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallengeTests/Pods-iSpyChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCF9832220AF2D1B1A493539 /* libPods-iSpyChallenge.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F878E3F1803C87F9365D395 /* libPods-iSpyChallengeTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,21 +132,49 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9262D52DD40712D2BE046285 /* libPods-iSpyChallengeUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		094A52A8683F6B0E71822282 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1EBDAEA452E50E7940D57A56 /* libPods-iSpyChallenge.a */,
+				C67E0CE36D31FEDBE7247A44 /* libPods-iSpyChallengeTests.a */,
+				DE5A457C94513EA9CD9B5346 /* libPods-iSpyChallengeUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19E66AE32B502076B5651502 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				716B58AEB48A3204E96CA11A /* Pods-iSpyChallenge.debug.xcconfig */,
+				8788DD4CF4396431C6384EB2 /* Pods-iSpyChallenge.release.xcconfig */,
+				F4EEE7B3218D0AD4DB89DD5C /* Pods-iSpyChallengeTests.debug.xcconfig */,
+				0CA31F2C71BCB6B8582DB2C5 /* Pods-iSpyChallengeTests.release.xcconfig */,
+				E84FF853D52317B75739AD02 /* Pods-iSpyChallengeUITests.debug.xcconfig */,
+				4951EB247BA1A7D739B51D9B /* Pods-iSpyChallengeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C3D5EFDC1D00BF5000A2669B = {
 			isa = PBXGroup;
 			children = (
 				C3D5F0601D016E9800A2669B /* ReadMe.md */,
+				C3E5A7881D01E3DD0083FF58 /* iSpy App - Coding Challenge.pdf */,
+				C3E5A7891D01E3E40083FF58 /* iSpy App - Coding Challenge.pages */,
 				C3D5F0351D0135C900A2669B /* iSpySampleData */,
 				C3D5EFE71D00BF5000A2669B /* iSpyChallenge */,
 				C3D5F0041D00BF5000A2669B /* iSpyChallengeTests */,
 				C3D5F00F1D00BF5000A2669B /* iSpyChallengeUITests */,
 				C3D5EFE61D00BF5000A2669B /* Products */,
+				19E66AE32B502076B5651502 /* Pods */,
+				094A52A8683F6B0E71822282 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,9 +279,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3D5F0151D00BF5000A2669B /* Build configuration list for PBXNativeTarget "iSpyChallenge" */;
 			buildPhases = (
+				EDF46719A0394CC49C35A534 /* [CP] Check Pods Manifest.lock */,
 				C3D5EFE11D00BF5000A2669B /* Sources */,
 				C3D5EFE21D00BF5000A2669B /* Frameworks */,
 				C3D5EFE31D00BF5000A2669B /* Resources */,
+				081704D3889A25A436C9CF23 /* [CP] Embed Pods Frameworks */,
+				500D8584F93F88CB21B49DB3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -252,9 +299,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3D5F0181D00BF5000A2669B /* Build configuration list for PBXNativeTarget "iSpyChallengeTests" */;
 			buildPhases = (
+				A154B03298487711C57D1F5B /* [CP] Check Pods Manifest.lock */,
 				C3D5EFFD1D00BF5000A2669B /* Sources */,
 				C3D5EFFE1D00BF5000A2669B /* Frameworks */,
 				C3D5EFFF1D00BF5000A2669B /* Resources */,
+				59EECA086D4D1BFEC47D59E1 /* [CP] Embed Pods Frameworks */,
+				CB8472EF9B0D8E3B21AEE22F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -270,9 +320,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3D5F01B1D00BF5000A2669B /* Build configuration list for PBXNativeTarget "iSpyChallengeUITests" */;
 			buildPhases = (
+				F898B7D1819E96A4FF1E1DF9 /* [CP] Check Pods Manifest.lock */,
 				C3D5F0081D00BF5000A2669B /* Sources */,
 				C3D5F0091D00BF5000A2669B /* Frameworks */,
 				C3D5F00A1D00BF5000A2669B /* Resources */,
+				27F43AC7303D200ADE84B172 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,6 +407,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		081704D3889A25A436C9CF23 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSpyChallenge/Pods-iSpyChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		27F43AC7303D200ADE84B172 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSpyChallengeUITests/Pods-iSpyChallengeUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		500D8584F93F88CB21B49DB3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSpyChallenge/Pods-iSpyChallenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59EECA086D4D1BFEC47D59E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSpyChallengeTests/Pods-iSpyChallengeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A154B03298487711C57D1F5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CB8472EF9B0D8E3B21AEE22F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iSpyChallengeTests/Pods-iSpyChallengeTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDF46719A0394CC49C35A534 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F898B7D1819E96A4FF1E1DF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C3D5EFE11D00BF5000A2669B /* Sources */ = {
@@ -526,6 +701,7 @@
 		};
 		C3D5F0161D00BF5000A2669B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 716B58AEB48A3204E96CA11A /* Pods-iSpyChallenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -538,6 +714,7 @@
 		};
 		C3D5F0171D00BF5000A2669B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8788DD4CF4396431C6384EB2 /* Pods-iSpyChallenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -550,6 +727,7 @@
 		};
 		C3D5F0191D00BF5000A2669B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4EEE7B3218D0AD4DB89DD5C /* Pods-iSpyChallengeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = iSpyChallengeTests/Info.plist;
@@ -562,6 +740,7 @@
 		};
 		C3D5F01A1D00BF5000A2669B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CA31F2C71BCB6B8582DB2C5 /* Pods-iSpyChallengeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = iSpyChallengeTests/Info.plist;
@@ -574,6 +753,7 @@
 		};
 		C3D5F01C1D00BF5000A2669B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E84FF853D52317B75739AD02 /* Pods-iSpyChallengeUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = iSpyChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -585,6 +765,7 @@
 		};
 		C3D5F01D1D00BF5000A2669B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4951EB247BA1A7D739B51D9B /* Pods-iSpyChallengeUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = iSpyChallengeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -613,6 +794,7 @@
 				C3D5F0171D00BF5000A2669B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3D5F0181D00BF5000A2669B /* Build configuration list for PBXNativeTarget "iSpyChallengeTests" */ = {
 			isa = XCConfigurationList;
@@ -621,6 +803,7 @@
 				C3D5F01A1D00BF5000A2669B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3D5F01B1D00BF5000A2669B /* Build configuration list for PBXNativeTarget "iSpyChallengeUITests" */ = {
 			isa = XCConfigurationList;
@@ -629,6 +812,7 @@
 				C3D5F01D1D00BF5000A2669B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
