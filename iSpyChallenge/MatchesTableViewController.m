@@ -1,25 +1,27 @@
 //
-//  ChallengesTableViewController.m
+//  MatchesTableViewController.m
 //  iSpyChallenge
 //
-//  Created by Bennett Smith on 6/2/16.
+//  Created by Bennett Smith on 6/3/16.
 //  Copyright © 2016 Blue Owl. All rights reserved.
 //
 
-#import "ChallengesTableViewController.h"
+#import "MatchesTableViewController.h"
 
 #import "User.h"
 #import "User+CoreDataProperties.h"
-#import "Challenge.h"
-#import "Challenge+CoreDataProperties.h"
+#import "Match.h"
+#import "Match+CoreDataProperties.h"
+
+#import "MatchTableViewController.h"
 
 #import <CoreData/CoreData.h>
 
-@interface ChallengesTableViewController () <NSFetchedResultsControllerDelegate>
+@interface MatchesTableViewController () <NSFetchedResultsControllerDelegate>
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @end
 
-@implementation ChallengesTableViewController
+@implementation MatchesTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -47,10 +49,14 @@
         Challenge *challenge = (Challenge *)[self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
         [controller performSelector:@selector(setChallenge:) withObject:challenge];
     }
+    if ([controller respondsToSelector:@selector(setMatch:)]) {
+        Match *match = (Match *)[self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
+        [controller performSelector:@selector(setMatch:) withObject:match];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showChallenge"]) {
+    if ([[segue identifier] isEqualToString:@"showMatch"]) {
         [self injectPropertiesInController:segue.destinationViewController];
     }
 }
@@ -67,7 +73,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChallengeCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MatchCell"];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -88,7 +94,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"showChallenge" sender:self];
+    [self performSegueWithIdentifier:@"showMatch" sender:self];
 }
 
 #pragma mark - Fetched Results Controller
@@ -98,16 +104,16 @@
         return _fetchedResultsController;
     }
     
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Challenge"];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Match"];
     [fetchRequest setFetchBatchSize:20];
     
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"creator = %@", self.user];
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"player = %@", self.user];
     [fetchRequest setPredicate:pred];
     
-    [fetchRequest setSortDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"hint" ascending:YES]]];
+    [fetchRequest setSortDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"verified" ascending:YES]]];
     
     NSManagedObjectContext *moc = [self.dataController managedObjectContext];
-    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:moc sectionNameKeyPath:nil cacheName:@"DataBrowserChallenge"]];
+    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:moc sectionNameKeyPath:nil cacheName:@"DataBrowserMatch"]];
     [[self fetchedResultsController] setDelegate:self];
     
     NSError *error = nil;
@@ -168,12 +174,12 @@
 
 - (void)configureCell:(UITableViewCell *)cell
           atIndexPath:(NSIndexPath *)indexPath {
-    Challenge *challenge = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    NSString *latlon = [NSString stringWithFormat:@"%@, %@", challenge.latitude, challenge.longitude];
+    Match *match = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    NSString *latlon = [NSString stringWithFormat:@"%@, %@", match.latitude, match.longitude];
     
-    [[cell textLabel] setText:challenge.hint];
+    [[cell textLabel] setText:([match.verified boolValue] == YES ? @"Verified Match!" : @"Match")];
     [[cell detailTextLabel] setText:latlon];
-    UIImage *photo = [self.photoController photoWithName:challenge.photoHref];
+    UIImage *photo = [self.photoController photoWithName:match.photoHref];
     [[cell imageView] setImage:photo];
 }
 

@@ -14,7 +14,6 @@
 
 @interface UsersTableViewController () <NSFetchedResultsControllerDelegate>
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) User *selectedUser;
 @end
 
 @implementation UsersTableViewController
@@ -41,13 +40,17 @@
     if ([controller respondsToSelector:@selector(setPhotoController:)]) {
         [controller performSelector:@selector(setPhotoController:) withObject:self.photoController];
     }
-    if ([controller respondsToSelector:@selector(setSelectedUser:)]) {
-        [controller performSelector:@selector(setSelectedUser:) withObject:self.selectedUser];
+    if ([controller respondsToSelector:@selector(setUser:)]) {
+        User *user = (User *)[[self fetchedResultsController] objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
+        [controller performSelector:@selector(setUser:) withObject:user];
     }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showChallenges"]) {
+        [self injectPropertiesInController:segue.destinationViewController];
+    }
+    else if ([[segue identifier] isEqualToString:@"showUser"]) {
         [self injectPropertiesInController:segue.destinationViewController];
     }
 }
@@ -85,8 +88,7 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    self.selectedUser = (User *)[[self fetchedResultsController] objectAtIndexPath:indexPath];
-    [self performSegueWithIdentifier:@"showChallenges" sender:nil];
+    [self performSegueWithIdentifier:@"showUser" sender:nil];
 }
 
 #pragma mark - Fetched Results Controller

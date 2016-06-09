@@ -1,25 +1,23 @@
 //
-//  ChallengesTableViewController.m
+//  RatingsTableViewController.m
 //  iSpyChallenge
 //
-//  Created by Bennett Smith on 6/2/16.
+//  Created by Bennett Smith on 6/8/16.
 //  Copyright © 2016 Blue Owl. All rights reserved.
 //
 
-#import "ChallengesTableViewController.h"
+#import "RatingsTableViewController.h"
 
-#import "User.h"
-#import "User+CoreDataProperties.h"
-#import "Challenge.h"
-#import "Challenge+CoreDataProperties.h"
+#import "Rating.h"
+#import "Rating+CoreDataProperties.h"
 
 #import <CoreData/CoreData.h>
 
-@interface ChallengesTableViewController () <NSFetchedResultsControllerDelegate>
+@interface RatingsTableViewController () <NSFetchedResultsControllerDelegate>
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @end
 
-@implementation ChallengesTableViewController
+@implementation RatingsTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -36,25 +34,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)injectPropertiesInController:(UIViewController *)controller {
-    if ([controller respondsToSelector:@selector(setDataController:)]) {
-        [controller performSelector:@selector(setDataController:) withObject:self.dataController];
-    }
-    if ([controller respondsToSelector:@selector(setPhotoController:)]) {
-        [controller performSelector:@selector(setPhotoController:) withObject:self.photoController];
-    }
-    if ([controller respondsToSelector:@selector(setChallenge:)]) {
-        Challenge *challenge = (Challenge *)[self.fetchedResultsController objectAtIndexPath:[self.tableView indexPathForSelectedRow]];
-        [controller performSelector:@selector(setChallenge:) withObject:challenge];
-    }
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showChallenge"]) {
-        [self injectPropertiesInController:segue.destinationViewController];
-    }
-}
-
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -67,7 +46,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ChallengeCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RatingCell"];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -87,10 +66,6 @@
     return NO;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self performSegueWithIdentifier:@"showChallenge" sender:self];
-}
-
 #pragma mark - Fetched Results Controller
 
 - (NSFetchedResultsController *)fetchedResultsController {
@@ -98,16 +73,22 @@
         return _fetchedResultsController;
     }
     
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Challenge"];
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] initWithEntityName:@"Rating"];
     [fetchRequest setFetchBatchSize:20];
     
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"creator = %@", self.user];
+    NSPredicate *pred = nil;
+    if (self.challenge) {
+        pred = [NSPredicate predicateWithFormat:@"challenge = %@", self.challenge];
+    }
+    else if (self.user) {
+        pred = [NSPredicate predicateWithFormat:@"player = %@", self.user];
+    }
     [fetchRequest setPredicate:pred];
     
-    [fetchRequest setSortDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"hint" ascending:YES]]];
+    [fetchRequest setSortDescriptors:[NSArray arrayWithObject:[[NSSortDescriptor alloc] initWithKey:@"stars" ascending:YES]]];
     
     NSManagedObjectContext *moc = [self.dataController managedObjectContext];
-    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:moc sectionNameKeyPath:nil cacheName:@"DataBrowserChallenge"]];
+    [self setFetchedResultsController:[[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:moc sectionNameKeyPath:nil cacheName:@"DataBrowserRating"]];
     [[self fetchedResultsController] setDelegate:self];
     
     NSError *error = nil;
@@ -168,13 +149,11 @@
 
 - (void)configureCell:(UITableViewCell *)cell
           atIndexPath:(NSIndexPath *)indexPath {
-    Challenge *challenge = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-    NSString *latlon = [NSString stringWithFormat:@"%@, %@", challenge.latitude, challenge.longitude];
+    Rating *rating = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+    NSString *stars = [NSString stringWithFormat:@"%@", rating.stars];
     
-    [[cell textLabel] setText:challenge.hint];
-    [[cell detailTextLabel] setText:latlon];
-    UIImage *photo = [self.photoController photoWithName:challenge.photoHref];
-    [[cell imageView] setImage:photo];
+    [[cell textLabel] setText:stars];
+    [[cell detailTextLabel] setText:rating.player.username];
 }
 
 @end

@@ -10,6 +10,8 @@
 		4F878E3F1803C87F9365D395 /* libPods-iSpyChallengeTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C67E0CE36D31FEDBE7247A44 /* libPods-iSpyChallengeTests.a */; };
 		9262D52DD40712D2BE046285 /* libPods-iSpyChallengeUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5A457C94513EA9CD9B5346 /* libPods-iSpyChallengeUITests.a */; };
 		BCF9832220AF2D1B1A493539 /* libPods-iSpyChallenge.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EBDAEA452E50E7940D57A56 /* libPods-iSpyChallenge.a */; };
+		C326BA671D02394A00CB9EAC /* ChallengeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C326BA661D02394A00CB9EAC /* ChallengeTableViewController.m */; };
+		C33E562E1D092E4C00E184F9 /* RatingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C33E562D1D092E4C00E184F9 /* RatingsTableViewController.m */; };
 		C3D5EFEA1D00BF5000A2669B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5EFE91D00BF5000A2669B /* main.m */; };
 		C3D5EFED1D00BF5000A2669B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5EFEC1D00BF5000A2669B /* AppDelegate.m */; };
 		C3D5EFF31D00BF5000A2669B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D5EFF11D00BF5000A2669B /* Main.storyboard */; };
@@ -33,7 +35,9 @@
 		C3D5F0561D0151DD00A2669B /* DataBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D5F0541D0151DD00A2669B /* DataBrowser.storyboard */; };
 		C3D5F0591D01577C00A2669B /* ChallengesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0581D01577C00A2669B /* ChallengesTableViewController.m */; };
 		C3D5F05C1D015E7200A2669B /* NSArray+RandomElement.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F05B1D015E7200A2669B /* NSArray+RandomElement.m */; };
-		C3D5F0611D016E9800A2669B /* ReadMe.md in Sources */ = {isa = PBXBuildFile; fileRef = C3D5F0601D016E9800A2669B /* ReadMe.md */; };
+		C3F54DA51D023DD100CCBCB6 /* UserTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F54DA41D023DD100CCBCB6 /* UserTableViewController.m */; };
+		C3F54DA81D0250E000CCBCB6 /* MatchesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F54DA71D0250E000CCBCB6 /* MatchesTableViewController.m */; };
+		C3F54DAB1D0250EB00CCBCB6 /* MatchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3F54DAA1D0250EB00CCBCB6 /* MatchTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		4951EB247BA1A7D739B51D9B /* Pods-iSpyChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallengeUITests/Pods-iSpyChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		716B58AEB48A3204E96CA11A /* Pods-iSpyChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallenge/Pods-iSpyChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		8788DD4CF4396431C6384EB2 /* Pods-iSpyChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallenge/Pods-iSpyChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		C326BA651D02394A00CB9EAC /* ChallengeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChallengeTableViewController.h; sourceTree = "<group>"; };
+		C326BA661D02394A00CB9EAC /* ChallengeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChallengeTableViewController.m; sourceTree = "<group>"; };
+		C33E562C1D092E4C00E184F9 /* RatingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingsTableViewController.h; sourceTree = "<group>"; };
+		C33E562D1D092E4C00E184F9 /* RatingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingsTableViewController.m; sourceTree = "<group>"; };
 		C3D5EFE51D00BF5000A2669B /* iSpyChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSpyChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3D5EFE91D00BF5000A2669B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C3D5EFEB1D00BF5000A2669B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -105,6 +113,12 @@
 		C3D5F0601D016E9800A2669B /* ReadMe.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ReadMe.md; sourceTree = "<group>"; };
 		C3E5A7881D01E3DD0083FF58 /* iSpy App - Coding Challenge.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "iSpy App - Coding Challenge.pdf"; sourceTree = "<group>"; };
 		C3E5A7891D01E3E40083FF58 /* iSpy App - Coding Challenge.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iSpy App - Coding Challenge.pages"; sourceTree = "<group>"; };
+		C3F54DA31D023DD000CCBCB6 /* UserTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserTableViewController.h; sourceTree = "<group>"; };
+		C3F54DA41D023DD100CCBCB6 /* UserTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTableViewController.m; sourceTree = "<group>"; };
+		C3F54DA61D0250E000CCBCB6 /* MatchesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchesTableViewController.h; sourceTree = "<group>"; };
+		C3F54DA71D0250E000CCBCB6 /* MatchesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchesTableViewController.m; sourceTree = "<group>"; };
+		C3F54DA91D0250EB00CCBCB6 /* MatchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchTableViewController.h; sourceTree = "<group>"; };
+		C3F54DAA1D0250EB00CCBCB6 /* MatchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchTableViewController.m; sourceTree = "<group>"; };
 		C67E0CE36D31FEDBE7247A44 /* libPods-iSpyChallengeTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iSpyChallengeTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE5A457C94513EA9CD9B5346 /* libPods-iSpyChallengeUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iSpyChallengeUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84FF853D52317B75739AD02 /* Pods-iSpyChallengeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallengeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallengeUITests/Pods-iSpyChallengeUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -194,7 +208,6 @@
 				C3D5EFEB1D00BF5000A2669B /* AppDelegate.h */,
 				C3D5EFEC1D00BF5000A2669B /* AppDelegate.m */,
 				C3D5EFF11D00BF5000A2669B /* Main.storyboard */,
-				C3D5F0541D0151DD00A2669B /* DataBrowser.storyboard */,
 				C3D5EFF71D00BF5000A2669B /* Assets.xcassets */,
 				C3D5EFF91D00BF5000A2669B /* LaunchScreen.storyboard */,
 				C3D5EFFC1D00BF5000A2669B /* Info.plist */,
@@ -264,10 +277,21 @@
 		C3D5F0531D01456B00A2669B /* Data Browser */ = {
 			isa = PBXGroup;
 			children = (
+				C3D5F0541D0151DD00A2669B /* DataBrowser.storyboard */,
 				C3D5F0501D0144DB00A2669B /* UsersTableViewController.h */,
 				C3D5F0511D0144DB00A2669B /* UsersTableViewController.m */,
 				C3D5F0571D01577C00A2669B /* ChallengesTableViewController.h */,
 				C3D5F0581D01577C00A2669B /* ChallengesTableViewController.m */,
+				C326BA651D02394A00CB9EAC /* ChallengeTableViewController.h */,
+				C326BA661D02394A00CB9EAC /* ChallengeTableViewController.m */,
+				C3F54DA31D023DD000CCBCB6 /* UserTableViewController.h */,
+				C3F54DA41D023DD100CCBCB6 /* UserTableViewController.m */,
+				C3F54DA61D0250E000CCBCB6 /* MatchesTableViewController.h */,
+				C3F54DA71D0250E000CCBCB6 /* MatchesTableViewController.m */,
+				C3F54DA91D0250EB00CCBCB6 /* MatchTableViewController.h */,
+				C3F54DAA1D0250EB00CCBCB6 /* MatchTableViewController.m */,
+				C33E562C1D092E4C00E184F9 /* RatingsTableViewController.h */,
+				C33E562D1D092E4C00E184F9 /* RatingsTableViewController.m */,
 			);
 			name = "Data Browser";
 			sourceTree = "<group>";
@@ -536,9 +560,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F54DAB1D0250EB00CCBCB6 /* MatchTableViewController.m in Sources */,
 				C3D5EFED1D00BF5000A2669B /* AppDelegate.m in Sources */,
 				C3D5F0591D01577C00A2669B /* ChallengesTableViewController.m in Sources */,
 				C3D5F04C1D013E7900A2669B /* Match.m in Sources */,
+				C3F54DA81D0250E000CCBCB6 /* MatchesTableViewController.m in Sources */,
+				C326BA671D02394A00CB9EAC /* ChallengeTableViewController.m in Sources */,
+				C3F54DA51D023DD100CCBCB6 /* UserTableViewController.m in Sources */,
 				C3D5F0521D0144DB00A2669B /* UsersTableViewController.m in Sources */,
 				C3D5F0201D00D8C800A2669B /* DataController.m in Sources */,
 				C3D5F04E1D013E7900A2669B /* Rating.m in Sources */,
@@ -547,9 +575,9 @@
 				C3D5F05C1D015E7200A2669B /* NSArray+RandomElement.m in Sources */,
 				C3D5EFF61D00BF5000A2669B /* iSpyChallenge.xcdatamodeld in Sources */,
 				C3D5F04D1D013E7900A2669B /* Rating+CoreDataProperties.m in Sources */,
-				C3D5F0611D016E9800A2669B /* ReadMe.md in Sources */,
 				C3D5EFEA1D00BF5000A2669B /* main.m in Sources */,
 				C3D5F0321D01303E00A2669B /* PhotoController.m in Sources */,
+				C33E562E1D092E4C00E184F9 /* RatingsTableViewController.m in Sources */,
 				C3D5F0471D013E7900A2669B /* Challenge+CoreDataProperties.m in Sources */,
 				C3D5F0491D013E7900A2669B /* User+CoreDataProperties.m in Sources */,
 				C3D5F0481D013E7900A2669B /* Challenge.m in Sources */,

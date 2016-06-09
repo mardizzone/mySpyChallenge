@@ -214,6 +214,40 @@
         }
     }];
     
+    // Now load the wins
+    [moc performBlockAndWait:^{
+        NSFetchRequest *userRequest = nil;
+        userRequest = [NSFetchRequest fetchRequestWithEntityName:@"User"];
+        NSError *error = nil;
+        NSArray *users = [moc executeFetchRequest:userRequest error:&error];
+        NSAssert(users != nil, [error localizedDescription]);
+        
+        NSFetchRequest *challengeRequest = nil;
+        challengeRequest = [NSFetchRequest fetchRequestWithEntityName:@"Challenge"];
+        NSArray *challenges = [moc executeFetchRequest:challengeRequest error:&error];
+        NSAssert(challenges != nil, [error localizedDescription]);
+
+        NSInteger numChallenges = [challenges count];
+        for (User *user in users) {
+            NSInteger numMatches = arc4random_uniform((u_int32_t)numChallenges);
+            for (NSInteger matchNumber = 0; matchNumber < numMatches; matchNumber++) {
+                NSInteger challengeIndex = arc4random_uniform((u_int32_t)numChallenges);
+                Challenge *challenge = [challenges objectAtIndex:challengeIndex];
+                Match *match = [NSEntityDescription insertNewObjectForEntityForName:@"Match" inManagedObjectContext:moc];
+                match.photoHref = challenge.photoHref;
+                match.longitude = challenge.longitude;
+                match.latitude = challenge.latitude;
+                match.player = user;
+                match.challenge = challenge;
+                match.verified =  [NSNumber numberWithBool:NO];
+            }
+        }
+        
+        if (![moc save:&error]) {
+            NSLog(@"Failed to populate the users: %@\n%@", [error localizedDescription], [error userInfo]);
+            abort();
+        }
+    }];
 }
 
 #pragma mark - Core Data stack
