@@ -25,8 +25,9 @@
 @property (strong) NSManagedObjectContext *managedObjectContext;
 
 // This provides you with access to a fictious "authenticated" user. This is useful
-// when adding new challenges to the data set.
-- (User *)authenticatedUser;
+// when adding new challenges to the data set.  This property is KVO observable, and
+// will change once the Core Data stack has been initialized.
+@property (nonatomic, strong, readonly) User *authenticatedUser;
 
 // Use this method to persist any changes to the sample data set.
 - (void)saveContext;

@@ -41,6 +41,7 @@
 - (instancetype)initWithPersistentStoreURL:(NSURL *)storeUrl completion:(void (^)(void))block {
     self = [super init];
     if (self) {
+        _authenticatedUser = nil;
         [self setPersistenceInitialized:NO];
         [self setInitBlock:block];
         [self initializeCoreDataStackUsingPersistentStoreURL:storeUrl];
@@ -80,26 +81,6 @@
             abort();
         }
     }];
-}
-
-- (User *)authenticatedUser {
-    NSManagedObjectContext *moc = nil;
-    NSManagedObjectContextConcurrencyType type = NSPrivateQueueConcurrencyType;
-    moc = [[NSManagedObjectContext alloc] initWithConcurrencyType:type];
-    [moc setParentContext:[self managedObjectContext]];
-
-    __block User *authenticatedUser = nil;
-    
-    [moc performBlockAndWait:^{
-        NSFetchRequest *request = nil;
-        request = [NSFetchRequest fetchRequestWithEntityName:@"User"];
-        NSError *error = nil;
-        NSArray *users = [moc executeFetchRequest:request error:&error];
-        NSAssert(users != nil, [error localizedDescription]);
-        authenticatedUser = [users firstObject];
-    }];
-
-    return authenticatedUser;
 }
 
 - (UIImage *)samplePhotoWithName:(NSString *)photoName {
@@ -175,7 +156,7 @@
         NSError *error = nil;
         NSArray *users = [moc executeFetchRequest:request error:&error];
         NSAssert(users != nil, [error localizedDescription]);
-
+        
         id challengesJson = [NSJSONSerialization JSONObjectWithData:[self sampleChallengesJSON] options:0 error:nil];
         if ([challengesJson isKindOfClass:[NSDictionary class]]) {
             NSArray *challenges = [challengesJson valueForKey:@"challenges"];
@@ -226,7 +207,7 @@
         challengeRequest = [NSFetchRequest fetchRequestWithEntityName:@"Challenge"];
         NSArray *challenges = [moc executeFetchRequest:challengeRequest error:&error];
         NSAssert(challenges != nil, [error localizedDescription]);
-
+        
         NSInteger numChallenges = [challenges count];
         for (User *user in users) {
             NSInteger numMatches = arc4random_uniform((u_int32_t)numChallenges);
@@ -248,6 +229,28 @@
             abort();
         }
     }];
+}
+
+- (void)fakeAuthentication {
+    NSManagedObjectContext *moc = nil;
+    NSManagedObjectContextConcurrencyType type = NSPrivateQueueConcurrencyType;
+    moc = [[NSManagedObjectContext alloc] initWithConcurrencyType:type];
+    [moc setParentContext:[self managedObjectContext]];
+    
+    [self willChangeValueForKey:@"authenticatedUser"];
+    __block NSManagedObjectID *userId = nil;
+    [moc performBlockAndWait:^{
+        NSFetchRequest *userRequest = nil;
+        userRequest = [NSFetchRequest fetchRequestWithEntityName:@"User"];
+        NSError *error = nil;
+        NSArray *users = [moc executeFetchRequest:userRequest error:&error];
+        NSAssert(users != nil, [error localizedDescription]);
+        userId = [[users firstObject] objectID];
+    }];
+    
+    _authenticatedUser = [[self managedObjectContext] objectWithID:userId];
+    
+    [self didChangeValueForKey:@"authenticatedUser"];
 }
 
 #pragma mark - Core Data stack
@@ -318,6 +321,8 @@
         [self populateWithSampleData];
         
         [self setPersistenceInitialized:YES];
+        
+        [self fakeAuthentication];
         
         if ([self initBlock]) {
             dispatch_sync(dispatch_get_main_queue(), ^{
