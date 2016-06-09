@@ -8,7 +8,15 @@ The goal of the challenge is to provide a springboard for you to be able to real
 
 You may use your own computer system for this exercise.  
 
-Clone the project on GitHub and work from your public repo.  When finished with the challenge please push your work back to your clone of the repo so we can take a look at the results.  Be sure to tell your interviewer what your GitHub user name is.
+Clone the project on GitHub and work from your public repo.  When finished with the challenge please create your own GitHub repo and push your work to it so we can take a look at the results.  Be sure to tell your interviewer what your GitHub user name is and the name of your repo.  For example, if your GitHub username is 'RockStar' and you create a public repo called 'mySpyChallenge', the following commands will get you started.
+
+````
+$ cd ~/Desktop
+$ git clone git@github.com:BlueOwlDev/iSpyChallenge.git --origin BlueOwl mySpyChallenge
+$ cd mySpyChallenge
+$ git remote add origin git@github.com:RockStar/mySpyChallenge.git
+$ git push -u origin master
+````
 
 Your goal is to implement the "New Challenge" and "Near Me" tabs in the app.  Refer to the documentation provided earlier for details on the model objects and what functionality the user interface should include.
 
