@@ -28,6 +28,8 @@ The model objects for the app are provided, along with some sample data for use 
  
 A helper class called PhotoController is provided to store and retrieve photos from a local directory.  The sample data set includes a number of challenges, each with a photo.
 
+Access to the sample data is provided via the DataController class. Refer to the class header for details of useful methods within the class.  You will need to utilize this class in order to complete the challenge.  The AppDelegate constructs the DataController and passes it into each of the view controllers.
+
 There are four users and six challenges in the sample data set.  The challenges are randomly assigned to users each time the sample data is loaded.
 
 The UI for the project consists of three tabs (New Challenge, Near Me, Data Browser).  The first two are placeholders for your work and the third one provides a means to view the sample data included with the project.
