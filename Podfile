@@ -3,9 +3,9 @@
 
 target 'iSpyChallenge' do
   # Uncomment this line if you're using Swift or would like to use dynamic frameworks
-  # use_frameworks!
+   use_frameworks!
 
-  # Pods for iSpyChallenge
+  pod 'ImagePicker'
 
   target 'iSpyChallengeTests' do
     inherit! :search_paths
