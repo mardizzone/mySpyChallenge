@@ -142,17 +142,36 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bP1-H6-um2">
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3G-CT-Ebu">
+                                        <rect key="frame" x="171.5" y="553" width="32" height="25"/>
+                                        <state key="normal" image="btnAddPhoto"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="z3G-CT-Ebu" secondAttribute="bottom" constant="17" id="ipI-Ux-r6i"/>
+                                    <constraint firstItem="z3G-CT-Ebu" firstAttribute="centerX" secondItem="bP1-H6-um2" secondAttribute="centerX" id="uCA-dL-nwd"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="bP1-H6-um2" firstAttribute="top" secondItem="6cx-Uc-yuJ" secondAttribute="bottom" id="4MG-DR-nET"/>
+                            <constraint firstItem="7K0-Ep-4ge" firstAttribute="top" secondItem="bP1-H6-um2" secondAttribute="bottom" id="92C-PI-Mwm"/>
                             <constraint firstItem="6cx-Uc-yuJ" firstAttribute="top" secondItem="XYh-7s-CkU" secondAttribute="bottom" constant="8" id="ONb-Yc-bZ9"/>
                             <constraint firstItem="6cx-Uc-yuJ" firstAttribute="leading" secondItem="aaF-eX-LsK" secondAttribute="leading" id="Wyo-St-0ML"/>
+                            <constraint firstAttribute="trailing" secondItem="bP1-H6-um2" secondAttribute="trailing" id="gc7-2R-QMz"/>
                             <constraint firstAttribute="trailing" secondItem="6cx-Uc-yuJ" secondAttribute="trailing" id="iTf-EV-rpA"/>
+                            <constraint firstItem="bP1-H6-um2" firstAttribute="leading" secondItem="aaF-eX-LsK" secondAttribute="leading" id="ioB-7N-8ad"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="9Ht-b4-J8C"/>
                     <connections>
                         <outlet property="navBar" destination="6cx-Uc-yuJ" id="VLo-N7-cBn"/>
+                        <outlet property="previewView" destination="bP1-H6-um2" id="hVJ-B6-tDB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqF-7N-x2B" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -197,9 +216,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82B-n9-elj">
                                 <rect key="frame" x="0.0" y="568" width="375" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0za-Gs-T25">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0za-Gs-T25">
                                         <rect key="frame" x="134" y="10" width="106" height="30"/>
                                         <state key="normal" title="Post Hint"/>
+                                        <connections>
+                                            <action selector="postHintPressed:" destination="5n9-6N-TNZ" eventType="touchUpInside" id="aQW-Cy-F7P"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -263,5 +285,6 @@
         <image name="1032-route" width="28" height="26"/>
         <image name="714-camera" width="28" height="21"/>
         <image name="alcatraz-island" width="1920" height="1280"/>
+        <image name="btnAddPhoto" width="32" height="25"/>
     </resources>
 </document>

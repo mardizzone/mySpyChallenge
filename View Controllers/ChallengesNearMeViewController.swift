@@ -16,10 +16,7 @@ class ChallengesNearMeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print(DataManager.shared.localImage(from: "alcatraz-island.jpg"))
         loadDataIntoTableView()
-        
     }
 
     func loadDataIntoTableView() {
@@ -44,7 +41,4 @@ extension ChallengesNearMeViewController: UITableViewDataSource, UITableViewDele
         cell.hintImageView.image = DataManager.shared.localImage(from: particularChallenge.photo)
         return cell
     }
-    
-    
-    
 }

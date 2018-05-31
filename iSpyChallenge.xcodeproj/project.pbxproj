@@ -13,6 +13,10 @@
 		7F0AEF1F20C04C6D0032B715 /* challenges.json in Resources */ = {isa = PBXBuildFile; fileRef = 7F0AEF1E20C04C6D0032B715 /* challenges.json */; };
 		7F0AEF2120C04E040032B715 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0AEF2020C04E040032B715 /* Model.swift */; };
 		7F0AEF2320C0527A0032B715 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0AEF2220C0527A0032B715 /* ChallengeTableViewCell.swift */; };
+		7F1A86E920C069F20029081C /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1A86E820C069F20029081C /* Sync.framework */; };
+		7F1A86EA20C06A330029081C /* Sync.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1A86E820C069F20029081C /* Sync.framework */; };
+		7F1A86EB20C06A330029081C /* Sync.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1A86E820C069F20029081C /* Sync.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F1A86EE20C06E280029081C /* NewHintLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1A86ED20C06E280029081C /* NewHintLocationManager.swift */; };
 		7F39E2CD20BF94D4008862A5 /* NewHintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39E2CC20BF94D4008862A5 /* NewHintViewController.swift */; };
 		7F39E2CF20BFABC7008862A5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39E2CE20BFABC7008862A5 /* Router.swift */; };
 		7F39E2D120BFAEBC008862A5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F39E2D020BFAEBC008862A5 /* CameraViewController.swift */; };
@@ -66,6 +70,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7F1A86EC20C06A330029081C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F1A86EB20C06A330029081C /* Sync.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		015FB3471DF7D5AC85B6777E /* Pods_iSpyChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSpyChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA31F2C71BCB6B8582DB2C5 /* Pods-iSpyChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSpyChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-iSpyChallengeTests/Pods-iSpyChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +94,8 @@
 		7F0AEF1E20C04C6D0032B715 /* challenges.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = challenges.json; sourceTree = "<group>"; };
 		7F0AEF2020C04E040032B715 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		7F0AEF2220C0527A0032B715 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		7F1A86E820C069F20029081C /* Sync.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sync.framework; path = Carthage/Build/iOS/Sync.framework; sourceTree = SOURCE_ROOT; };
+		7F1A86ED20C06E280029081C /* NewHintLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHintLocationManager.swift; sourceTree = "<group>"; };
 		7F39E2CB20BF94D3008862A5 /* iSpyChallenge-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iSpyChallenge-Bridging-Header.h"; sourceTree = "<group>"; };
 		7F39E2CC20BF94D4008862A5 /* NewHintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewHintViewController.swift; sourceTree = "<group>"; };
 		7F39E2CE20BFABC7008862A5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -150,6 +170,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				077E3C30451B9F4637B63AF7 /* Pods_iSpyChallenge.framework in Frameworks */,
+				7F1A86E920C069F20029081C /* Sync.framework in Frameworks */,
+				7F1A86EA20C06A330029081C /* Sync.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +220,7 @@
 		7F0AEF2420C055870032B715 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7F1A86E820C069F20029081C /* Sync.framework */,
 				7F39E2D020BFAEBC008862A5 /* CameraViewController.swift */,
 				7F0AEF1B20C04B460032B715 /* ChallengesNearMeViewController.swift */,
 				7F39E2CC20BF94D4008862A5 /* NewHintViewController.swift */,
@@ -221,6 +244,7 @@
 				7F0AEF2020C04E040032B715 /* Model.swift */,
 				7F0AEF1E20C04C6D0032B715 /* challenges.json */,
 				7F0AEF1920C04A760032B715 /* DataManager.swift */,
+				7F1A86ED20C06E280029081C /* NewHintLocationManager.swift */,
 				7F39E2D220BFB26E008862A5 /* Protocols.swift */,
 				7F39E2CA20BF935A008862A5 /* Router */,
 				C3D5F0601D016E9800A2669B /* ReadMe.md */,
@@ -354,6 +378,7 @@
 				C3D5EFE31D00BF5000A2669B /* Resources */,
 				081704D3889A25A436C9CF23 /* [CP] Embed Pods Frameworks */,
 				500D8584F93F88CB21B49DB3 /* [CP] Copy Pods Resources */,
+				7F1A86EC20C06A330029081C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -661,6 +686,7 @@
 				C3D5EFEA1D00BF5000A2669B /* main.m in Sources */,
 				C3D5F0321D01303E00A2669B /* PhotoController.m in Sources */,
 				C33E562E1D092E4C00E184F9 /* RatingsTableViewController.m in Sources */,
+				7F1A86EE20C06E280029081C /* NewHintLocationManager.swift in Sources */,
 				C3D5F0471D013E7900A2669B /* Challenge+CoreDataProperties.m in Sources */,
 				C3D5F0491D013E7900A2669B /* User+CoreDataProperties.m in Sources */,
 				C3D5F0481D013E7900A2669B /* Challenge.m in Sources */,
@@ -818,7 +844,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6N9UB8Q788;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueowl.iSpyChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -836,7 +867,12 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 6N9UB8Q788;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iSpyChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.blueowl.iSpyChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -10,10 +10,12 @@ import UIKit
 import ImagePicker
 import MapKit
 import CoreLocation
+import Sync
 
 
 class NewHintViewController: UIViewController {
     
+    var dataStack = DataStack()
     let imagePickerController = ImagePickerController()
     let coreLocationManager = CLLocationManager()
     @IBOutlet weak var hintTextField: UITextField!
@@ -26,17 +28,27 @@ class NewHintViewController: UIViewController {
         hintTextField.delegate = self
         setUpImagePickerController()
         setUpLocationServices()
-        
     }
     
 
     @IBAction func selectPhotoPressed(_ sender: Any) {
         tabBarController?.present(imagePickerController, animated: true, completion: nil)
     }
+    
     @IBAction func takePhotoPressed(_ sender: UIButton) {
         let cameraVC = Router.shared.cameraVC as! CameraViewController
         cameraVC.delegate = self
         Router.shared.present(from: self, to: cameraVC)
+    }
+    
+    @IBAction func postHintPressed(_ sender: UIButton) {
+        self.dataStack = DataStack(modelName: "Challenge")
+        //provide logic to remove need to force unwrap
+        let currentHint = Challenge(photo: (pickedImageView.image?.accessibilityIdentifier!)!, hint: hintTextField.text!, latitude: NewHintLocationManager.shared.latitude!, longitude: NewHintLocationManager.shared.longitude!)
+        let json = DataManager.shared.createJSONObject(from: currentHint)
+//        dataStack.sync(json, inEntityNamed: "Challenge") { error in
+//
+//        }
     }
 }
 
@@ -94,6 +106,8 @@ extension NewHintViewController: CLLocationManagerDelegate  {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locationFromDevice = locations.last else {return}
         let location = CLLocationCoordinate2DMake(locationFromDevice.coordinate.latitude, locationFromDevice.coordinate.longitude)
+        NewHintLocationManager.shared.latitude = location.latitude
+        NewHintLocationManager.shared.longitude = location.longitude
         setRegionOnMap(location)
         setAnnotationOnMap(location)
     }

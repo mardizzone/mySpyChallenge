@@ -33,5 +33,12 @@ class DataManager {
         guard let imageToReturn = UIImage(named: file) else {return nil}
         return imageToReturn
     }
-
+    
+    func createJSONObject(from challenge: Challenge) -> Data? {
+        let encodedData = try? JSONEncoder().encode(challenge)
+        return encodedData
+    }
+    
+//    func sortChallengesBasedOnDistance(presorted: [Challenge]) -> [Challenge] {
+//    }
 }
