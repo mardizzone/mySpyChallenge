@@ -9,10 +9,7 @@
 import Foundation
 
 class NewHintLocationManager {
-    
     var latitude: Double?
     var longitude: Double?
-    
     static let shared = NewHintLocationManager()
-    
 }

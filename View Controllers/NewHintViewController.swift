@@ -14,7 +14,6 @@ import Sync
 
 
 class NewHintViewController: UIViewController {
-    
     var dataStack = DataStack()
     let imagePickerController = ImagePickerController()
     let coreLocationManager = CLLocationManager()
@@ -52,9 +51,8 @@ class NewHintViewController: UIViewController {
     }
 }
 
-
+//MARK: - Image Picker
 extension NewHintViewController: ImagePickerDelegate {
-    
     func setUpImagePickerController() {
         imagePickerController.delegate = self
         imagePickerController.imageLimit = 1
@@ -76,7 +74,7 @@ extension NewHintViewController: ImagePickerDelegate {
     }
 }
 
-
+//MARK: - Hide Keyboard
 extension NewHintViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.hintTextField.resignFirstResponder()
@@ -117,6 +115,7 @@ extension NewHintViewController: CLLocationManagerDelegate  {
     }
 }
 
+//MARK: - Camera Delegate
 extension NewHintViewController: CameraDelegate {
     func photoTaken(photo: UIImage) {
         print("called")

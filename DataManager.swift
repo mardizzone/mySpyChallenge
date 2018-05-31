@@ -11,9 +11,6 @@ import UIKit
 
 class DataManager {
     
-    let resourceName = "challenges"
-    let dataType = "json"
-    
     static let shared = DataManager()
 
     func getData(from resourceName: String, with type: String) -> Data? {
